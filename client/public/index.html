@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>IntervAI — AI Voice & Technical Interview Coach</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <meta name="description" content="AI interview practice platform that evaluates Content quality via Gemini AI, Communication filler words & pace, and STAR structure." />
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        background-color: #090d16;
+        color: #f8fafc;
+        font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      }
+      .initial-splash {
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 16px;
+      }
+      .initial-logo {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+      }
+      .initial-icon {
+        width: 44px;
+        height: 44px;
+        background: linear-gradient(135deg, #4f46e5, #06b6d4);
+        border-radius: 12px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-weight: 800;
+        font-size: 20px;
+        color: #fff;
+      }
+      .initial-title {
+        font-size: 26px;
+        font-weight: 800;
+        letter-spacing: -0.02em;
+      }
+      .initial-spinner {
+        width: 24px;
+        height: 24px;
+        border: 3px solid rgba(99, 102, 241, 0.2);
+        border-top-color: #6366f1;
+        border-radius: 50%;
+        animation: init-spin 0.8s linear infinite;
+      }
+      @keyframes init-spin {
+        to { transform: rotate(360deg); }
+      }
+    </style>
+  </head>
+  <body>
+    <div id="root">
+      <div class="initial-splash">
+        <div class="initial-logo">
+          <div class="initial-icon">✦</div>
+          <span class="initial-title">IntervAI</span>
+        </div>
+        <div class="initial-spinner"></div>
+        <p style="color: #94a3b8; font-size: 14px; margin: 0;">Loading AI Interview Coach...</p>
+      </div>
+    </div>
+  </body>
+</html>

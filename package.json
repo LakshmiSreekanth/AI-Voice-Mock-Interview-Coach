@@ -1,0 +1,53 @@
+{
+  "name": "ai-interview-coach",
+  "version": "1.0.0",
+  "description": "IntervAI - AI-Powered Voice & Technical Interview Practice Platform",
+  "main": "server/index.js",
+  "scripts": {
+    "start": "node server/index.js",
+    "server": "node server/index.js",
+    "client": "node node_modules/webpack/bin/webpack.js serve --mode development",
+    "build": "node node_modules/webpack/bin/webpack.js --mode production",
+    "dev": "node dev.js"
+  },
+  "keywords": [
+    "interview-coach",
+    "gemini-ai",
+    "speech-recognition",
+    "star-method",
+    "filler-words",
+    "react",
+    "node"
+  ],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "dependencies": {
+    "bcryptjs": "^3.0.3",
+    "better-sqlite3": "^13.0.3",
+    "bootstrap": "^5.3.8",
+    "canvas-confetti": "^1.9.4",
+    "cors": "^2.8.6",
+    "dotenv": "^18.0.7",
+    "express": "^5.3.0",
+    "jsonwebtoken": "^9.0.3",
+    "lucide-react": "^1.55.0",
+    "pdf-parse": "^2.4.5",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
+  },
+  "devDependencies": {
+    "@babel/core": "^8.0.7",
+    "@babel/preset-env": "^8.0.7",
+    "@babel/preset-react": "^8.0.1",
+    "babel-loader": "^10.1.1",
+    "concurrently": "^10.0.6",
+    "css-loader": "^7.1.5",
+    "html-webpack-plugin": "^5.6.8",
+    "nodemon": "^3.1.14",
+    "style-loader": "^4.0.0",
+    "webpack": "^5.111.1",
+    "webpack-cli": "^7.2.3",
+    "webpack-dev-server": "^6.0.0"
+  }
+}
